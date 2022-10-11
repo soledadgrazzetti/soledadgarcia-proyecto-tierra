@@ -99,69 +99,80 @@ li.link.filtro.activo {
 }
 
 @media screen and (min-width: 768px) {
-    .portfolio-proyectos .contenedor-item{
+    .portfolio-proyectos .contenedor-item {
         width: calc(50% - 10px);
-    } 
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    .portfolio-proyectos .contenedor-item{
+    .portfolio-proyectos .contenedor-item {
         width: calc(25% - 10px);
-    } 
+    }
 }
 
 /* ----------- FIN Portfolio ------------- */
 
+/* ----------- Clientes ------------- */
 
+.container-clientes {
+    margin-bottom: 10px;
+}
+
+/* ----------- FIN clientes ------------- */
 
 /* ----------- Nosotros ------------- */
 
-.contenedor-grid{
+.contenedor-grid {
     display: grid;
-    grid-template-areas: 
-    "nosotros"
-    "nosotros-img";
+    grid-template-areas:
+        "nosotros"
+        "nosotros-img";
     gap: 10px;
     margin-bottom: 10px;
 }
 
-.nosotros-img img{
+.nosotros-img img {
     width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    .contenedor-grid{
-        grid-template-areas: 
-        "nosotros nosotros-img";
+    .contenedor-grid {
+        grid-template-areas:
+            "nosotros nosotros-img";
     }
 }
+
 /* ----------- FIN Nosotros ------------- */
 
 
 /* ----------- contacto ------------- */
 
-.contenedor-grid{
+.contenedor-grid {
     display: grid;
-    grid-template-areas: 
-    "formulario"
-    "mapa";
+    grid-template-areas:
+        "formulario"
+        "mapa";
     gap: 10px;
     margin-bottom: 10px;
 }
 
-.mapa img{
+.mapa {
+    text-align: right;
+}
+
+.mapa img {
     width: 100%;
     max-width: 700px;
 }
 
-.datos{
+.datos {
     margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
-    .contenedor-grid{
-        grid-template-areas: 
-        "formulario mapa";
+    .contenedor-grid {
+        grid-template-areas:
+            "formulario mapa";
     }
 }
 
