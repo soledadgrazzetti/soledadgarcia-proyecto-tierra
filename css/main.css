@@ -1,0 +1,172 @@
+/* ----------- Inicio ------------- */
+
+.container.tarjetas {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card.tarjeta {
+    text-align: center;
+}
+
+.carousel-item .img-carousel {
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* ----------- Portfolio ------------- */
+
+/* Navegacion */
+
+div#nav-secundaria {
+    background-color: var(--color-accent);
+    font-family: var(--family);
+    font-size: 20px;
+    text-align: center;
+}
+
+div#nav-secundaria ul {
+    padding: 0px;
+}
+
+li.link.filtro {
+    width: 19%;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+li.link.filtro a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+li.link.filtro.activo {
+    font-weight: bold;
+    background-color: var(--color-secundary);
+}
+
+/* Proyectos */
+
+.portfolio-proyectos {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.portfolio-proyectos .contenedor-item {
+    width: 100%;
+    margin: 5px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.portfolio-proyectos .contenedor-item .overlay,
+.portfolio-proyectos .contenedor-item .overlay-text {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: var(--h1);
+    font-weight: 100;
+    font-family: var(--family);
+    color: var(--color-white);
+}
+
+.portfolio-proyectos .contenedor-item:hover .overlay {
+    background-color: var(--color-accent);
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-proyectos .contenedor-item:hover .overlay-text {
+    display: block;
+    position: relative;
+    top: calc(-50% - 20px);
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-proyectos .contenedor-item{
+        width: calc(50% - 10px);
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .portfolio-proyectos .contenedor-item{
+        width: calc(25% - 10px);
+    } 
+}
+
+/* ----------- Fin Portfolio ------------- */
+
+/* ----------- Detalle de Propiedad ------------- */
+
+.detalle-propiedad {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.detalle {
+    width: 50%;
+}
+
+.detalle-img {
+    width: 100%;
+}
+
+
+.item-detalle {
+    background-color: var(--color-secundary);
+    padding: 10px;
+    display: inline-block;
+    color: var(--color-white);
+    position: relative;
+    left: 250px;
+    top: 30px;
+    text-align: right;
+    font-family: var(--family);
+}
+
+h1.detalle {
+    font-weight: 500;
+    margin: 30px 0px;
+}
+
+/* ----------- Fin Detalle de Propiedad ------------- */
+
+/* ----------- Nosotros ------------- */
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    "nosotros"
+    "nosotros-img";
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.nosotros-img img{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .contenedor-grid{
+        grid-template-areas: 
+        "nosotros nosotros-img";
+    }
+}
