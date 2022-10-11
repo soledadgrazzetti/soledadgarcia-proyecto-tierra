@@ -17,6 +17,7 @@
     background-position: center;
 }
 
+/* ----------- FIN Inicio ------------- */
 
 /* ----------- Portfolio ------------- */
 
@@ -109,48 +110,12 @@ li.link.filtro.activo {
     } 
 }
 
-/* ----------- Fin Portfolio ------------- */
-
-/* ----------- Detalle de Propiedad ------------- */
-
-.detalle-propiedad {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.detalle {
-    width: 50%;
-}
-
-.detalle-img {
-    width: 100%;
-}
+/* ----------- FIN Portfolio ------------- */
 
 
-.item-detalle {
-    background-color: var(--color-secundary);
-    padding: 10px;
-    display: inline-block;
-    color: var(--color-white);
-    position: relative;
-    left: 250px;
-    top: 30px;
-    text-align: right;
-    font-family: var(--family);
-}
-
-h1.detalle {
-    font-weight: 500;
-    margin: 30px 0px;
-}
-
-/* ----------- Fin Detalle de Propiedad ------------- */
 
 /* ----------- Nosotros ------------- */
+
 .contenedor-grid{
     display: grid;
     grid-template-areas: 
@@ -170,3 +135,34 @@ h1.detalle {
         "nosotros nosotros-img";
     }
 }
+/* ----------- FIN Nosotros ------------- */
+
+
+/* ----------- contacto ------------- */
+
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    "formulario"
+    "mapa";
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.mapa img{
+    width: 100%;
+    max-width: 700px;
+}
+
+.datos{
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .contenedor-grid{
+        grid-template-areas: 
+        "formulario mapa";
+    }
+}
+
+/* ----------- FIN Contacto ------------- */
