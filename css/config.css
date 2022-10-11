@@ -1,0 +1,39 @@
+:root {
+    /* ---- Colors ---- */
+    --color-primary: #FFDABD;
+    --color-secundary: #BC580C;
+    --color-accent: #522D11;
+    --color-white: #ffffff;
+
+
+    /* Family */
+    --family: 'Montserrat', sans-serif;
+
+
+    /* ---- Sizes ---- */
+    --h1: 35px;
+    --h2: 25px;
+    --h3: 23px;
+}
+
+/* ----------- Estilos ------------- */
+
+h1 {
+    font-size: var(--h1);
+    font-family: var(--family);
+    font-weight: 300;
+    margin: 30px 64px;
+    color: var(--color-accent);
+}
+
+/* ----------- Fin Estilos ------------- */
+
+hr {
+    width: 80%;
+    margin: auto;
+    height: 2px;
+    margin-bottom: 30px;
+    background-color: var(--color-secundary);
+    border: none;
+}
+
