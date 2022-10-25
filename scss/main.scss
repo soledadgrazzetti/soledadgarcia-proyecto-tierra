@@ -1,0 +1,298 @@
+@import "variables";
+
+/* ----------- Estilos ------------- */
+
+h1 {
+    font-size: $h1;
+    font-family: $family;
+    font-weight: 300;
+    margin: 30px 64px;
+    color: $color-accent;
+}
+
+/* ----------- Fin Estilos ------------- */
+
+hr {
+    width: 80%;
+    margin: auto;
+    height: 2px;
+    margin-bottom: 30px;
+    background-color: $color-secundary;
+    border: none;
+}
+
+/* ----------- Header ------------- */
+
+nav {
+    .navbar-brand {
+        img {
+            height: 100%;
+            width: 100px;
+        }
+    }
+}
+
+.bg-soledad {
+    background-color: $color-primary;
+}
+
+/* ----------- Fin Header ------------- */
+
+/* ----------- Inicio ------------- */
+
+.container.tarjetas {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card.tarjeta {
+    text-align: center;
+}
+
+.carousel-item {
+    .img-carousel {
+        width: 100%;
+        height: calc(100vh - 65px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/* ----------- FIN Inicio ------------- */
+
+
+/* ----------- Portfolio ------------- */
+
+/* Navegacion */
+
+div {
+    &#nav-secundaria {
+        background-color: $color-accent;
+        font-family: $family;
+        font-size: 20px;
+        text-align: center;
+
+        ul {
+            padding: 0px;
+        }
+    }
+}
+
+li {
+    &.link.filtro {
+        width: 19%;
+        padding: 15px 0px;
+        text-align: center;
+
+        &.activo {
+            font-weight: bold;
+            background-color: $color-secundary;
+        }
+
+        a {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+}
+
+/* Proyectos */
+
+.portfolio-proyectos {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+
+    .contenedor-item {
+        width: 100%;
+        margin: 5px;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-decoration: none;
+
+        @media screen and (min-width: 768px) {
+            width: calc(50% - 10px);
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: calc(25% - 10px);
+        }
+
+        .overlay,
+        .overlay-text {
+            display: none;
+            text-align: center;
+            text-decoration: none;
+            font-size: $h1;
+            font-weight: 100;
+            font-family: $family;
+            color: $color-white;
+        }
+
+        &:hover .overlay {
+            background-color: $color-accent;
+            height: 100%;
+            width: 100%;
+            opacity: .8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &:hover .overlay-text {
+            display: block;
+            position: relative;
+            top: calc(-50% - 20px);
+        }
+    }
+}
+
+/* ----------- FIN Portfolio --------*/
+
+
+/* ----------- Clientes ------------- */
+
+.container-clientes {
+    margin-bottom: 10px;
+}
+
+/* ----------- FIN clientes --------- */
+
+
+/* ----------- Nosotros ------------- */
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+        "nosotros"
+        "nosotros-img";
+    gap: 10px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        grid-template-areas:
+            "nosotros nosotros-img";
+    }
+}
+
+.nosotros-img {
+    img {
+        width: 100%;
+    }
+}
+
+/* ----------- FIN Nosotros ------------- */
+
+
+/* ----------- contacto ------------- */
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+        "formulario"
+        "mapa";
+    gap: 10px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        grid-template-areas:
+            "formulario mapa";
+    }
+}
+
+.mapa {
+    text-align: right;
+
+    img {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+.datos {
+    margin-bottom: 10px;
+}
+
+
+/* ----------- FIN Contacto ------------- */
+
+/* ----------- Footer ------------- */
+
+footer {
+    background-color: $color-primary;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+
+    .footer-brand {
+        img {
+            width: 25%;
+            margin: 10px 0px;
+            text-align: center;
+        }
+    }
+
+    .footer-nav {
+        ul {
+            list-style-type: none;
+            padding-inline-start: 0px;
+        }
+    }
+
+    .footer-redes {
+        img {
+            display: inline;
+            width: 40px;
+            padding: 5px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    footer {
+        background-color: $color-primary;
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+
+        .footer-brand {
+            img {
+                width: 40%;
+                margin: 35px 0px;
+            }
+        }
+
+        .footer-p {
+            p {
+                margin: 33px 0px;
+            }
+        }
+
+        .footer-nav {
+            ul {
+                margin: 10px;
+            }
+        }
+
+        .footer-redes {
+            img {
+                display: inline;
+                width: 50px;
+                padding: 5px;
+                margin: 33px 0px;
+            }
+        }
+    }
+}
+
+
+/* ----------- FIN footer ------------- */
