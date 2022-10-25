@@ -1,3 +1,54 @@
+:root {
+    /* ---- Colors ---- */
+    --color-primary: #FFDABD;
+    --color-secundary: #BC580C;
+    --color-accent: #522D11;
+    --color-white: #ffffff;
+
+
+    /* Family */
+    --family: 'Montserrat', sans-serif;
+
+
+    /* ---- Sizes ---- */
+    --h1: 35px;
+    --h2: 25px;
+    --h3: 23px;
+}
+
+/* ----------- Estilos ------------- */
+
+h1 {
+    font-size: var(--h1);
+    font-family: var(--family);
+    font-weight: 300;
+    margin: 30px 64px;
+    color: var(--color-accent);
+}
+
+/* ----------- Fin Estilos ------------- */
+
+hr {
+    width: 80%;
+    margin: auto;
+    height: 2px;
+    margin-bottom: 30px;
+    background-color: var(--color-secundary);
+    border: none;
+}
+/* ----------- Header ------------- */
+
+nav .navbar-brand img {
+    height: 100%;
+    width: 100px;
+}
+
+.bg-soledad {
+    background-color: var(--color-primary);
+}
+
+/* ----------- Fin Header ------------- */
+
 /* ----------- Inicio ------------- */
 
 .container.tarjetas {
@@ -177,3 +228,62 @@ li.link.filtro.activo {
 }
 
 /* ----------- FIN Contacto ------------- */
+
+/* ----------- Footer ------------- */
+
+footer {
+    background-color: var(--color-primary);
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer .footer-brand img {
+    width: 25%;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+
+footer .footer-nav ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+footer .footer-redes img {
+    display: inline;
+    width: 40px;
+    padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        background-color: var(--color-primary);
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .footer-brand img {
+        width: 40%;
+        margin: 35px 0px;
+    }
+
+    footer .footer-p p {
+        margin: 33px 0px;
+    }
+
+    footer .footer-nav ul {
+        margin: 10px;
+    }
+
+    footer .footer-redes img {
+        display: inline;
+        width: 50px;
+        padding: 5px;
+        margin: 33px 0px;
+    }
+}
+
+/* ----------- FIN footer ------------- */
