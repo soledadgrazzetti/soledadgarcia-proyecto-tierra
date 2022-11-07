@@ -2,12 +2,16 @@
 
 /* ----------- Estilos ------------- */
 
-h1 {
-    font-size: $h1;
+@mixin titulo ($tamanio-fuente) {
+    font-size: $tamanio-fuente;
     font-family: $family;
     font-weight: 300;
     margin: 30px 64px;
     color: $color-accent;
+  }
+
+  h1 {
+    @include titulo($h1);
 }
 
 /* ----------- Fin Estilos ------------- */
